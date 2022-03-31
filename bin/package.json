@@ -1,0 +1,14 @@
+{
+  "name": "westwing-tech-radar",
+  "version": "1.0.0",
+  "description": "Our tech radar",
+  "main": "refresh.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "g-sheets-api": "^2.1.2"
+  }
+}
