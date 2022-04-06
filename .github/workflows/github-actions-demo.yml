@@ -1,0 +1,15 @@
+name: Rebuild points and publish 
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+       - name: do the magic    
+         env:
+          GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
+         run: |
+          cd bin && npm install && node refresh.js "$GOOGLE_KEY"
+       - name: Add & Commit
+         uses: EndBug/add-and-commit@v9.0.0
+       - run: echo "This job's status is ${{ job.status }}."   
