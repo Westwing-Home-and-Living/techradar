@@ -1,19 +1,19 @@
 
 const entries = [];
 
-for (var i = 0; i < points.length; i++ ) {
-  var test = points[i];
+// map gsheet points in zradar script points 
+points.forEach(point => {
   const temp = {};
   const rings = [ "Adopt", "Trial", "Assess", "Hold" ];
   const quadrants = ["Tools", "Languages & Frameworks", "Infrastructure", "Data"];
-  temp.label = test.name;
-  temp.ring = rings.indexOf(test.ring);
-  temp.quadrant = quadrants.indexOf(test.quadrant);
-  temp.ring = rings.indexOf(test.ring);
+  temp.label = point.name;
+  temp.ring = rings.indexOf(point.ring);
+  temp.quadrant = quadrants.indexOf(point.quadrant);
+  temp.ring = rings.indexOf(point.ring);
   temp.active = true;
   temp.moved = 0;
   entries.push(temp);
-}
+});
 
 
 radar_visualization({
