@@ -12,7 +12,7 @@ const readerOptions = {
 // reading files from gsheet
 reader(readerOptions, (results, error) => {
     if (error) {
-        console.error('Problem retreaving points ', error);
+        console.error('Problem retreaving points', error);
     }
     results.forEach(element => {
         content += '{ name: "' + element.name + '", ring: "'+ element.ring +'",quadrant: "' + element.quadrant +'" },\n';
