@@ -116,5 +116,4 @@ const points = [{ name: "Airflow", ring: "Trial",quadrant: "Tools" },
 { name: "WebdriverIO", ring: "Adopt",quadrant: "Languages & Frameworks" },
 { name: "Wordpress", ring: "Hold",quadrant: "Tools" },
 { name: "Yii", ring: "Hold",quadrant: "Languages & Frameworks" },
-{ name: "Codeigniter", ring: "Hold",quadrant: "Languages & Frameworks" },
 ]
