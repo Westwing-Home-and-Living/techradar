@@ -4,8 +4,8 @@ let content = 'const points = [';
 
 //gsheet details
 const readerOptions = {
-    sheetId: "YOUR_SHEET_ID",
-    apiKey: 'YOUR_API_KEY',
+    sheetId: "1qxqDFvSeZvmaHd5MNnJ-JiDcmUTXilXjCm9xfJe03EM",
+    apiKey: process.argv[2],
     returnAllResults: true
 };
 
