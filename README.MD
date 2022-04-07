@@ -10,6 +10,8 @@ This repository contains the code to generate the visualization:
 Feel free to use and adapt it for your own purposes.
 
 All the radar's points are coming from a public [gSheet](https://docs.google.com/spreadsheets/d/1qxqDFvSeZvmaHd5MNnJ-JiDcmUTXilXjCm9xfJe03EM/edit#gid=0) and to trigger a refresh you only need to run the  "Rebuild points and publish" action. 
+
+
 The action is also triggered from any merge to the main branch. 
 So, please **don't commit changes to points.js** since it will be automatically overwritten (and pushed) from the action. 
 
