@@ -13,15 +13,16 @@ const readerOptions = {
 reader(readerOptions, (results, error) => {
     if (error) {
         console.error('Problem retreaving points', error);
+        return;
     }
     results.forEach(element => {
-        content += '{ name: "' + element.name + '", ring: "'+ element.ring +'",quadrant: "' + element.quadrant +'" },\n';
+        content += '{ name: "' + element.name + '", ring: "' + element.ring + '",quadrant: "' + element.quadrant + '" },\n';
     });
     content += ']';
     fs.writeFile('../points.js', content, err => {
         if (err) {
             console.error(err)
-            return
+            return;
         }
         console.log("points.js written");
     });
