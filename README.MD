@@ -6,7 +6,7 @@ align on technology choices. It is based on the [pioneering work
 by ThoughtWorks](https://www.thoughtworks.com/radar).
 
 This repository contains the code to generate the visualization:
-[`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).
+[`radar.js`](https://github.com/Westwing-Home-and-Living/techradar/blob/main/radar.js) (based on [d3.js v4](https://d3js.org)).
 Feel free to use and adapt it for your own purposes.
 
 All the radar's points are coming from a public [gSheet](https://docs.google.com/spreadsheets/d/1qxqDFvSeZvmaHd5MNnJ-JiDcmUTXilXjCm9xfJe03EM/edit#gid=0) and to trigger a refresh you only need to run the  "Rebuild points and publish" action. 
