@@ -13,6 +13,8 @@ All the radar's points are coming from a public [gSheet](https://docs.google.com
 
 
 The action is also triggered from any merge to the main branch. 
+
+
 So, please **don't commit changes to points.js** since it will be automatically overwritten (and pushed) from the action. 
 
 ```
