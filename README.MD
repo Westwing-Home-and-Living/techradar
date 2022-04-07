@@ -1,6 +1,6 @@
 # Westwing tech radar 
 
-At [Westwing](http://westwing.de), we maintain a [public Tech
+At [Westwing](http://westwing.com), we maintain a [public Tech
 Radar](https://westwing-home-and-living.github.io/techradar/) to help our engineering teams
 align on technology choices. It is based on the [pioneering work
 by ThoughtWorks](https://www.thoughtworks.com/radar).
