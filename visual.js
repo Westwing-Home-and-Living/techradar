@@ -1,18 +1,22 @@
-
 const entries = [];
+const rings = [ "Adopt", "Trial", "Assess", "Hold" ];
+const quadrants = ["Tools", "Languages & Frameworks", "Infrastructure", "Data"];
 
 // map gsheet points in zradar script points 
 points.forEach(point => {
   const temp = {};
-  const rings = [ "Adopt", "Trial", "Assess", "Hold" ];
-  const quadrants = ["Tools", "Languages & Frameworks", "Infrastructure", "Data"];
-  temp.label = point.name;
-  temp.ring = rings.indexOf(point.ring);
-  temp.quadrant = quadrants.indexOf(point.quadrant);
-  temp.ring = rings.indexOf(point.ring);
-  temp.active = true;
-  temp.moved = 0;
-  entries.push(temp);
+  // check inconsintencies in the points 
+  if (point.name && rings.indexOf(point.ring) > -1 && 
+    quadrants.indexOf(point.quadrant) > -1 && 
+    rings.indexOf(point.ring) > -1) {
+      temp.label = point.name;
+      temp.ring = rings.indexOf(point.ring);
+      temp.quadrant = quadrants.indexOf(point.quadrant);
+      temp.ring = rings.indexOf(point.ring);
+      temp.active = true;
+      temp.moved = 0;
+      entries.push(temp);       
+  }
 });
 
 
@@ -27,16 +31,16 @@ radar_visualization({
     },
     title: "Westwing Tech Radar — 2022.04",
     quadrants: [
-      { name: "Tools" },
-      { name: "Languages & Frameworks" },
-      { name: "Infrastructure" },
-      { name: "Data" },
+      { name: quadrants[0] },
+      { name: quadrants[1] },
+      { name: quadrants[2] },
+      { name: quadrants[3] },
     ],
     rings: [
-      { name: "ADOPT", color: "#93c47d" },
-      { name: "TRIAL", color: "#93d2c2" },
-      { name: "ASSESS", color: "#fbdb84" },
-      { name: "HOLD", color: "#efafa9" }
+      { name: rings[0].toUpperCase(), color: "#93c47d" },
+      { name: rings[1].toUpperCase(), color: "#93d2c2" },
+      { name: rings[2].toUpperCase(), color: "#fbdb84" },
+      { name: rings[3].toUpperCase(), color: "#efafa9" }
     ],
     print_layout: true,
     // zoomed_quadrant: 0,
