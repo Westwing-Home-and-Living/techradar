@@ -17,4 +17,5 @@ The action is also triggered from any merge to the main branch.
 
 So, please **don't commit changes to points.js** since it will be automatically overwritten (and pushed) from the action. 
 
+This solution is based on the original [Zalando tech radar](https://github.com/zalando/tech-radar)  
 ```
