@@ -14,8 +14,24 @@ All the radar's points are coming from a public [gSheet](https://docs.google.com
 
 The action is also triggered from any merge to the main branch. 
 
-
 So, please **don't commit changes to points.js** since it will be automatically overwritten (and pushed) from the action. 
 
-This solution is based on the original [Zalando tech radar](https://github.com/zalando/tech-radar)  
+
+## Local Development
+If you want to test on your local env the "refresh points" script: 
+
+
+1. install dependencies with npm (or yarn):
+
 ```
+cd bin && npm install
+```
+
+2. start local dev server:
+
+```
+npm start
+```
+## 
+This solution is based on the original [Zalando tech radar](https://github.com/zalando/tech-radar)  
+
