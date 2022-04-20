@@ -200,7 +200,8 @@ function radar_visualization(config) {
   if ("zoomed_quadrant" in config) {
     svg.attr("viewBox", viewbox(config.zoomed_quadrant));
   } else {
-    radar.attr("transform", translate(config.width / 2, config.height / 2));
+    var moveup = 210;
+    radar.attr("transform", translate(config.width / 2, (config.height - moveup) / 2));
   }
 
   var grid = radar.append("g");
