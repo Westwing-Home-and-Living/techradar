@@ -23,7 +23,7 @@ points.forEach(point => {
 radar_visualization({
     svg_id: "radar",
     width: 1450,
-    height: 1040,
+    height: 1140,
     moveup: 210,
     colors: {
       background: "#fff",
