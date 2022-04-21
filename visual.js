@@ -24,6 +24,7 @@ radar_visualization({
     svg_id: "radar",
     width: 1450,
     height: 1150,
+    moveup: 210,
     colors: {
       background: "#fff",
       grid: "#bbb",
