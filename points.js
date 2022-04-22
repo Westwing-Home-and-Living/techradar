@@ -1,4 +1,4 @@
-const points = [{ name: "Airflow", ring: "Trial", quadrant: "Tools", moved: 0 },
+const points = [{ name: "Airflow", ring: "Trial", quadrant: "Tools", moved: 1 },
 { name: "Alertmanager", ring: "Adopt", quadrant: "Tools", moved: 0 },
 { name: "Ansible", ring: "Adopt", quadrant: "Tools", moved: 0 },
 { name: "AppCenter", ring: "Adopt", quadrant: "Tools", moved: 0 },
