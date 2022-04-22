@@ -12,9 +12,8 @@ points.forEach(point => {
       temp.label = point.name;
       temp.ring = rings.indexOf(point.ring);
       temp.quadrant = quadrants.indexOf(point.quadrant);
-      temp.ring = rings.indexOf(point.ring);
       temp.active = true;
-      temp.moved = 0;
+      temp.moved = point.moved;
       entries.push(temp);       
   }
 });

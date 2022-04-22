@@ -16,7 +16,8 @@ reader(readerOptions, (results, error) => {
         return;
     }
     results.forEach(element => {
-        content += '{ name: "' + element.name + '", ring: "' + element.ring + '",quadrant: "' + element.quadrant + '" },\n';
+        element.moved = (!element.moved) ? 0 : element.moved; 
+        content += '{ name: "' + element.name + '", ring: "' + element.ring + '", quadrant: "' + element.quadrant + '", moved: ' + element.moved + ' },\n';
     });
     content += ']';
     fs.writeFile('../points.js', content, err => {
