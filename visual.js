@@ -19,6 +19,7 @@ points.forEach(point => {
 });
 
 
+
 radar_visualization({
     svg_id: "radar",
     width: 1450,
@@ -29,7 +30,7 @@ radar_visualization({
       grid: "#bbb",
       inactive: "#ddd"
     },
-    title: "Westwing Tech Radar — 2022.04",
+    title: "Westwing Tech Radar — 2022.06",
     quadrants: [
       { name: quadrants[0] },
       { name: quadrants[1] },
