@@ -48,10 +48,10 @@ function radar_visualization(config) {
   ];
 
   const rings = [
-    { radius: 130 },
-    { radius: 220 },
-    { radius: 310 },
-    { radius: 400 }
+    { radius: 150 },
+    { radius: 240 },
+    { radius: 330 },
+    { radius: 420 }
   ];
 
   const title_offset =
@@ -207,13 +207,13 @@ function radar_visualization(config) {
 
   // draw grid lines
   grid.append("line")
-    .attr("x1", 0).attr("y1", -400)
-    .attr("x2", 0).attr("y2", 400)
+    .attr("x1", 0).attr("y1", -420)
+    .attr("x2", 0).attr("y2", 420)
     .style("stroke", config.colors.grid)
     .style("stroke-width", 1);
   grid.append("line")
-    .attr("x1", -400).attr("y1", 0)
-    .attr("x2", 400).attr("y2", 0)
+    .attr("x1", -420).attr("y1", 0)
+    .attr("x2", 420).attr("y2", 0)
     .style("stroke", config.colors.grid)
     .style("stroke-width", 1);
 
