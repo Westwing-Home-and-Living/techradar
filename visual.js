@@ -30,7 +30,7 @@ radar_visualization({
       grid: "#bbb",
       inactive: "#ddd"
     },
-    title: "Westwing Tech Radar — 2022.06",
+    title: "Westwing Tech Radar — 2022.10",
     quadrants: [
       { name: quadrants[0] },
       { name: quadrants[1] },
