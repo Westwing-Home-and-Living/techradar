@@ -75,7 +75,7 @@ const points = [{ name: ".NET (C#)", ring: "Trial", quadrant: "Languages & Frame
 { name: "Memcached ", ring: "Hold", quadrant: "Data", moved: 0 },
 { name: "Microsoft Report Builder", ring: "Adopt", quadrant: "Tools", moved: 0 },
 { name: "Microsoft SQL", ring: "Adopt", quadrant: "Data", moved: 1 },
-{ name: "Monday.com", ring: "Trial", quadrant: "Tools", moved: 0 },
+{ name: "Monday.com", ring: "Adopt", quadrant: "Tools", moved: 1 },
 { name: "MongoDB ", ring: "Hold", quadrant: "Data", moved: 0 },
 { name: "MS 365 Business Central", ring: "Adopt", quadrant: "Tools", moved: 0 },
 { name: "MS Dynamics NAV", ring: "Hold", quadrant: "Tools", moved: 0 },
