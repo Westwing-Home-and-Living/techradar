@@ -2,19 +2,19 @@ const entries = [];
 const rings = [ "Adopt", "Trial", "Assess", "Hold" ];
 const quadrants = ["Tools", "Languages & Frameworks", "Infrastructure", "Data"];
 
-// map gsheet points in zradar script points 
+// map gsheet points in zradar script points
 points.forEach(point => {
   const temp = {};
-  // check inconsintencies in the points 
-  if (point.name && rings.indexOf(point.ring) > -1 && 
-    quadrants.indexOf(point.quadrant) > -1 && 
+  // check inconsintencies in the points
+  if (point.name && rings.indexOf(point.ring) > -1 &&
+    quadrants.indexOf(point.quadrant) > -1 &&
     rings.indexOf(point.ring) > -1) {
       temp.label = point.name;
       temp.ring = rings.indexOf(point.ring);
       temp.quadrant = quadrants.indexOf(point.quadrant);
       temp.active = true;
       temp.moved = point.moved;
-      entries.push(temp);       
+      entries.push(temp);
   }
 });
 
@@ -30,7 +30,7 @@ radar_visualization({
       grid: "#bbb",
       inactive: "#ddd"
     },
-    title: "Westwing Tech Radar — 2022.10",
+    title: "Westwing Tech Radar — 2023.02",
     quadrants: [
       { name: quadrants[0] },
       { name: quadrants[1] },
