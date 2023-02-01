@@ -127,7 +127,6 @@ const points = [{ name: ".NET (C#)", ring: "Trial", quadrant: "Languages & Frame
 { name: "TypeScript", ring: "Adopt", quadrant: "Languages & Frameworks", moved: 0 },
 { name: "Umbrella", ring: "Adopt", quadrant: "Infrastructure", moved: 0 },
 { name: "Vector", ring: "Trial", quadrant: "Infrastructure", moved: 0 },
-{ name: "Vertica", ring: "Hold", quadrant: "Data", moved: 0 },
 { name: "Virustotal", ring: "Adopt", quadrant: "Tools", moved: 0 },
 { name: "WebdriverIO", ring: "Adopt", quadrant: "Languages & Frameworks", moved: 0 },
 { name: "Wordpress", ring: "Hold", quadrant: "Tools", moved: 0 },
